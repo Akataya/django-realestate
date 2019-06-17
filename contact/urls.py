@@ -4,7 +4,7 @@ from . import views
 app_name = 'contact'
 
 urlpatterns = [
-    path('', views.send_mail, name='send_mail'),
+    path('', views.send_email, name='send_email'),
     path('success/', views.success, name='success')
 ]
 
