@@ -16,8 +16,7 @@ class Property(models.Model):
     baths_number = models.PositiveIntegerField()
     garages_number = models.PositiveIntegerField()
     image = models.ImageField(upload_to='property/', null=True, blank=True)
-
-    # location
+    location = models.CharField(max_length=50, null=True)
 
     class Meta:
         verbose_name = 'Property'
