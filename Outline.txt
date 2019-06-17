@@ -24,3 +24,6 @@
 
 - Contact
 - Home
+- Location
+- Search
+- Category count
