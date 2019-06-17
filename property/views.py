@@ -3,6 +3,7 @@ from .models import Property, Category
 from .forms import ReserveForm
 from django.db.models import Q
 
+
 def property_list(request):
     property_list = Property.objects.all()
     template = 'property/list.html'
