@@ -12,3 +12,12 @@ class About(models.Model):
 
     def __str__(self):
         return str(self.id)
+
+
+class Service(models.Model):
+    title = models.CharField(max_length=100)
+    description = models.TextField(max_length=150)
+    icon = models.CharField(max_length=150)
+
+    def __str__(self):
+        return str(self.title)

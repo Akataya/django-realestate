@@ -6,6 +6,6 @@ def aboutus(request):
     about = About.objects.last()
     template = 'about/about.html'
     context = {
-        'about': about
+        'about': about,
     }
     return render(request, template, context)
